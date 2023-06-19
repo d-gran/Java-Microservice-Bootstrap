@@ -40,4 +40,4 @@ This project is currently in its initial state, and any contributions are welcom
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the [MIT License](LICENSE.md).
