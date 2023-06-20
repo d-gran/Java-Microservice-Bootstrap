@@ -1,0 +1,16 @@
+version: "3"
+services:
+  service-discovery:
+    build: ../service-discovery
+    ports:
+      - '8761:8761'
+    env_file:
+      - .env
+  api-gateway:
+    build: ../api-gateway
+    ports:
+      - '8081:8081'
+    depends_on:
+      - service-discovery
+    env_file:
+      - .env

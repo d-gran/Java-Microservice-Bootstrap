@@ -24,15 +24,13 @@ You can use this project as a starting point for developing your microservice ap
 
 ### Installation
 
-WIP
-
-### Testing
-
-WIP
+Using Maven, please run:
+`mvn clean install`
 
 ### Deployment
 
-WIP
+Having Docker daemon up, in a `docker` catalog please run:
+`docker-compose up -d --build`
 
 ### Contributing
 

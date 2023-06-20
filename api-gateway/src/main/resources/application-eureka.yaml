@@ -1,0 +1,6 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${SERVICE_DISCOVERY_ADDRESS}
+    healthcheck:
+      enabled: true
