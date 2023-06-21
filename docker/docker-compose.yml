@@ -14,3 +14,7 @@ services:
       - service-discovery
     env_file:
       - .env
+  reverse-proxy:
+    build: ../nginx
+    ports:
+      - 80:80

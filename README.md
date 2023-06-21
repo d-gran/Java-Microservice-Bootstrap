@@ -2,6 +2,7 @@
 
 This is a basic template for a microservice project which is a good starting point for me to kickoff different projects.
 It provides a starting point for building a microservice application. Of course - it can be further extended and customized.
+Template is based on Eureka service discovery. Services are placed behind nginx reverse proxy. Nothing fancy.
 
 ## Getting Started
 
