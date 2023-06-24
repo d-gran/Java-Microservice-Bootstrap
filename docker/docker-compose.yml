@@ -2,19 +2,41 @@ version: "3"
 services:
   service-discovery:
     build: ../service-discovery
+    restart: always
     ports:
       - '8761:8761'
     env_file:
       - .env
+    networks:
+      - business-network
   api-gateway:
     build: ../api-gateway
+    restart: always
     ports:
-      - '8081:8081'
+      - '8080:8080'
     depends_on:
       - service-discovery
     env_file:
       - .env
-  reverse-proxy:
-    build: ../nginx
-    ports:
-      - 80:80
+    networks:
+      - business-network
+  first-business-service:
+    build: ../first-business-service
+    depends_on:
+      - service-discovery
+    env_file:
+      - .env
+    networks:
+      - business-network
+  second-business-service:
+    build: ../second-business-service
+    depends_on:
+      - service-discovery
+    env_file:
+      - .env
+    networks:
+      - business-network
+
+networks:
+  business-network:
+    driver: bridge

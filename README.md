@@ -2,7 +2,7 @@
 
 This is a basic template for a microservice project which is a good starting point for me to kickoff different projects.
 It provides a starting point for building a microservice application. Of course - it can be further extended and customized.
-Template is based on Eureka service discovery. Services are placed behind nginx reverse proxy. Nothing fancy.
+Template is based on Eureka service discovery. Services are placed behind Zuul reverse proxy. Nothing fancy.
 
 ## Getting Started
 
@@ -30,8 +30,9 @@ Using Maven, please run:
 
 ### Deployment
 
-Having Docker daemon up, in a `docker` catalog please run:
-`docker-compose up -d --build`
+Having Docker daemon up, in a `docker` catalog this example can be launched by:
+`docker-compose up -d --build --scale first-business-service=3 --scale second-business-service=3`
+3 replicas per service serve only as an example.
 
 ### Contributing
 

@@ -1,3 +1,11 @@
 spring:
   application:
     name: api-gateway
+zuul:
+  routes:
+    first-service:
+      path: /first/**
+      serviceId: first-business-service
+    second-service:
+      path: /second/**
+      serviceId: second-business-service

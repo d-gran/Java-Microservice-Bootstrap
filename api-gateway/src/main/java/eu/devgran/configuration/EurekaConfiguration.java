@@ -1,4 +1,4 @@
-package eu.devgran.apigateway.configuration;
+package eu.devgran.configuration;
 
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.context.annotation.Configuration;
