@@ -4,3 +4,26 @@ eureka:
       defaultZone: ${SERVICE_DISCOVERY_ADDRESS}
     healthcheck:
       enabled: true
+    fetch-registry: true
+    register-with-eureka: true
+  instance:
+    prefer-ip-address: true
+spring:
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        - id: first-business-service
+          uri: lb://first-business-service
+          predicates:
+            - Path=/first/**
+        - id: second-business-service
+          uri: lb://second-business-service
+          predicates:
+            - Path=/second/**
+        - id: service-discovery
+          uri: lb://service-discovery
+          predicates:
+            - Path=/eureka/**

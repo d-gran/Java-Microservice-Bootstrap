@@ -32,7 +32,6 @@
         <lombok.version>1.18.28</lombok.version>
         <spring-boot.version>3.1.0</spring-boot.version>
         <spring-cloud.version>2022.0.3</spring-cloud.version>
-        <spring-cloud-zuul.version>2.2.10.RELEASE</spring-cloud-zuul.version>
     </properties>
 
     <dependencyManagement>
