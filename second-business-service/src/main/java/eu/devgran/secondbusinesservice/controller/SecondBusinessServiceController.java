@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class SecondBusinessServiceController {
 
-    @GetMapping("/")
+    @GetMapping("/second")
     public void endpoint() {
         log.info("Second called");
     }
