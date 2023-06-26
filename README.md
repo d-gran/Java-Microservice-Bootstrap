@@ -2,7 +2,7 @@
 
 This is a basic template for a microservice project which is a good starting point for me to kickoff different projects.
 It provides a starting point for building a microservice application. Of course - it can be further extended and customized.
-Template is based on Eureka service discovery. Services are placed behind Zuul reverse proxy. Nothing fancy.
+Template is based on Eureka service discovery. Services are placed behind Spring Cloud Gateway reverse proxy. Nothing fancy.
 
 ## Getting Started
 
@@ -37,6 +37,12 @@ Having Docker daemon up, in a `docker` catalog this example can be launched by:
 ### Contributing
 
 This project is currently in its initial state, and any contributions are welcome. If you find a bug or have an enhancement suggestion, please create an issue in the project repository.
+
+### In progress
+
+- Sleuth integration;
+- Circuit Breaker (perhaps Ribbon);
+- Detailed logging;
 
 ## License
 
