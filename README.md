@@ -40,9 +40,9 @@ This project is currently in its initial state, and any contributions are welcom
 
 ### In progress
 
-- Sleuth integration;
+- Sleuth integration & detailed logging;
 - Circuit Breaker (perhaps Ribbon);
-- Detailed logging;
+- Some infrastructural stuff (maybe Kubernetes);
 
 ## License
 
