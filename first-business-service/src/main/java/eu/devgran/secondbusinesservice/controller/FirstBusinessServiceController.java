@@ -11,7 +11,9 @@ import java.util.UUID;
 public class FirstBusinessServiceController {
 
     @GetMapping("/call")
-    public String call() {
+    public String call() throws InterruptedException {
+        log.info("Call received!");
+        Thread.sleep(5000); // Just to see proper measure in tracing backend
         return "First responded: " + UUID.randomUUID();
     }
 }

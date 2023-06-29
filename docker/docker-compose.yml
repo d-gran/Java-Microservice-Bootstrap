@@ -36,6 +36,12 @@ services:
       - .env
     networks:
       - business-network
+  tracing-backend:
+    image: openzipkin/zipkin:2-arm64
+    ports:
+      - '9411:9411'
+    networks:
+      - business-network
 
 networks:
   business-network:
