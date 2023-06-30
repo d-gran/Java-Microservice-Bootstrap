@@ -36,10 +36,17 @@
         <groovy-all.version>4.0.12</groovy-all.version>
         <spock-core.version>2.4-M1-groovy-4.0</spock-core.version>
         <gmaven-plugin.version>3.0.0</gmaven-plugin.version>
+        <io-micrometer.version>1.11.1</io-micrometer.version>
     </properties>
 
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>io.micrometer</groupId>
+                <artifactId>micrometer-bom</artifactId>
+                <version>${io-micrometer.version}</version>
+                <type>pom</type>
+            </dependency>
             <dependency>
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok</artifactId>
