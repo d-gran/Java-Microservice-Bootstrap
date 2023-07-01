@@ -3,7 +3,7 @@
 This is a basic template for a microservice project which is a good starting point for me to kickoff different projects.
 It provides a starting point for building a microservice application. Of course - it can be further extended and customized.
 Template is based on Eureka service discovery. Services are placed behind Spring Cloud Gateway reverse proxy.
-Test are written in Groovy with Spock framework.
+Test are written in Groovy with Spock framework. Tracing is provided by Micrometer & Zipkin integration.
 
 Nothing fancy but it serves as a good start!
 
@@ -43,7 +43,6 @@ This project is currently in its initial state, and any contributions are welcom
 
 ### In progress
 
-- Sleuth integration & detailed logging;
 - Some infrastructural stuff (maybe Kubernetes);
 
 ## License
